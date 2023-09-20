@@ -1,0 +1,35 @@
+  117  tree
+  118  start /
+  119  tree
+  120  clear
+  121  code .
+  122  ./reto.sh
+  123  history
+  124  ./reto.sh
+  125  ./reto.sh
+  126  ./reto.sh
+  127  ./reto.sh
+  128  mkdir -p reto_clase_3/archivos/textos_planos reto_clase_3/archivos/pdf reto_clase_3/mover_imagen1_aqui
+  129  cd reto_clase_3
+  130  url=https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg
+  131  curl -o Imagen1.jpg $url
+  132  cd archivos/textos_planos
+  133  touch texto_plano1.txt 
+  134  echo "Hola Texto_plano1" > Texto_plano1.txt
+  135  touch Texto_plano2.txt
+  136  echo "Hola Texto_plano2" > Texto_plano2.txt
+  137  cd ..
+  138  cd pdf
+  139  pdf=https://appletree.or.kr/quick_reference_cards/Unix-Linux/Linux%20Command%20Line%20Cheat%20Sheet.pdf
+  140  curl -o explicacion.pdf $pdf
+  141  cd ..
+  142  cd ..
+  143  mv Imagen1.jpg ./mover_imagen1_aqui
+  144  tree ./ > estructura.txt
+  145  history
+  146  echo "El profe se la rifa" > estructura.txt
+  147  tree ./ > estructura.txt
+  148  echo "El profe se la rifa" > estructura.txt
+  149  tree ./ > estructura.txt
+  150  echo "El profe se la rifa" >> estructura.txt
+  151  history | tail -35 >> historial.txt
